@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  color: white;
+  text-align: center;
+  background-image: url("../img/photo-1576428144127-5910570051f8.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.love-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  height: 100%;
+  padding: 100px;
+}
+
+.love-card .head-card {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: url("/img/cursor-on-hearth.svg"), auto;
+}
+
+.love-card .head-card img {
+  max-width: 250px;
+}
+
+.love-card .head-card p {
+  font-style: medium;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.love-card .head-card .love {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -webkit-animation: beat 1.2s ease infinite;
+          animation: beat 1.2s ease infinite;
+}
+
+@-webkit-keyframes beat {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes beat {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+.love-card .foot-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.love-card .foot-container .logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  max-width: 100px;
+}
+/*# sourceMappingURL=style.css.map */
